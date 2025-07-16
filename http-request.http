@@ -1,0 +1,46 @@
+###
+## CREATE USER
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "firstName": "Lucas",
+    "lastName": "Teste 2",
+    "email": "lucas2@gmail.com",
+    "phone": "102030",
+    "address": {
+        "street": "123",
+        "city": "New",
+        "state": "N",
+        "country": "U",
+        "zipcode": "123"
+        }
+
+}
+
+###
+## GET USERS
+
+GET http://localhost:8080/api/users
+
+###
+
+## UPDATE USER
+PUT http://localhost:8080/api/users/12
+Content-Type: application/json
+
+{
+    "firstName": "Lucas",
+    "lastName": "Pasos",
+    "email": "lucas@gmail.com",
+    "phone": "10203040",
+    "role": "CUSTOMER",
+    "address": {
+      "street": "123",
+      "city": "New",
+      "state": "N",
+      "country": "U",
+      "zipcode": "123"
+    }
+  }
