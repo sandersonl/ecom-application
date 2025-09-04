@@ -5,9 +5,9 @@ POST http://localhost:8080/api/users
 Content-Type: application/json
 
 {
-    "firstName": "Lucas",
-    "lastName": "Teste 2",
-    "email": "lucas2@gmail.com",
+    "firstName": "joao",
+    "lastName": "teste 2",
+    "email": "joao2@gmail.com",
     "phone": "102030",
     "address": {
         "street": "123",
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ###
-## GET USERS
+## GET ALL USERS
 
 GET http://localhost:8080/api/users
 
@@ -31,9 +31,9 @@ PUT http://localhost:8080/api/users/12
 Content-Type: application/json
 
 {
-    "firstName": "Lucas",
-    "lastName": "Pasos",
-    "email": "lucas@gmail.com",
+    "firstName": "jose",
+    "lastName": "teste 3",
+    "email": "jose3@gmail.com",
     "phone": "10203040",
     "role": "CUSTOMER",
     "address": {

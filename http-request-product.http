@@ -1,0 +1,50 @@
+###
+## CREATE PRODUCT
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 13",
+  "category": "Eletronics",
+  "description": "iPhone 13 Black",
+  "stockQuantity": 40,
+  "imageUrl": "http://placehold.com/600x400",
+  "price": 699.99,
+  "active": true
+}
+
+
+###
+## GET ALL PRODUCTS
+
+GET http://localhost:8080/api/products
+
+###
+## UPDATE PRODUCT
+
+PUT http://localhost:8080/api/products/4
+Content-Type: application/json
+
+{
+  "name": "iPhone 13",
+  "category": "Eletronics",
+  "description": "iPhone 13 Blue",
+  "stockQuantity": 45,
+  "imageUrl": "http://placehold.com/600x400",
+  "price": 699.99,
+  "active": false
+}
+
+
+###
+## DELETE PRODUCT
+
+DELETE http://localhost:8080/api/products/7
+
+###
+## SEARCH PRODUCTS
+
+GET http://localhost:8080/api/products/search?keyword=iphone
+
+
